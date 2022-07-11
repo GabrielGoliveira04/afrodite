@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:afrodite/src/extensions/text_style_extension.dart';
+import 'package:flutter/material.dart';
 
 class TokenTextTheme extends TextTheme {
   const TokenTextTheme({
@@ -31,7 +31,35 @@ class TokenTextTheme extends TextTheme {
     TextStyle? caption,
     TextStyle? button,
     TextStyle? overline,
-  });
+  }) : super(
+            headline1: headline1,
+            headline2: headline2,
+            headline3: headline3,
+            headline4: headline4,
+            headline5: headline5,
+            headline6: headline6,
+            displaySmall: displaySmall,
+            displayMedium: displayMedium,
+            displayLarge: displayLarge,
+            headlineSmall: headlineSmall,
+            headlineMedium: headlineMedium,
+            headlineLarge: headlineLarge,
+            titleSmall: titleSmall,
+            titleMedium: titleMedium,
+            titleLarge: titleLarge,
+            bodySmall: bodySmall,
+            bodyMedium: bodyMedium,
+            bodyLarge: bodyLarge,
+            labelSmall: labelSmall,
+            labelMedium: labelMedium,
+            labelLarge: labelLarge,
+            subtitle1: subtitle1,
+            subtitle2: subtitle2,
+            bodyText1: bodyText1,
+            bodyText2: bodyText2,
+            caption: caption,
+            button: button,
+            overline: overline);
 
   factory TokenTextTheme.fromJson(Map<String, dynamic> json) => TokenTextTheme(
         headline1: const TextStyle().fromJson(json['headline1']),
